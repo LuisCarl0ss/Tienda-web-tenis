@@ -1,0 +1,13 @@
+# Archivos de entorno (contienen secretos, nunca deben subirse)
+/e-comerce/.env
+/backend/.env
+
+# Dependencias (se instalan con 'npm install', son muy pesadas)
+/e-comerce/node_modules
+/backend/node_modules
+
+# Archivos de build de React
+/e-comerce/build
+
+# Archivos del sistema operativo
+.DS_Store
