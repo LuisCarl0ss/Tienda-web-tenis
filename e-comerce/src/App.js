@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
         const fetchTenis = async () => {
             try {
-                const res = await fetch('http://localhost:5000/api/tenis'); // Endpoint para obtener tenis
+                const res = await fetch('https://tienda-web-tenis.onrender.com/api/tenis'); // Endpoint para obtener tenis
                 const data = await res.json();
                 setTenis(data); // Actualizamos el estado con los tenis de la DB
             } catch (error) {

@@ -15,8 +15,8 @@ function AdminPanel({ tenis, setTenis }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const url = isEditing
-      ? `http://localhost:5000/api/tenis/${isEditing}`
-      : 'http://localhost:5000/api/tenis';
+      ? `https://tienda-web-tenis.onrender.com/api/tenis${isEditing}`
+      : 'https://tienda-web-tenis.onrender.com/api/tenis';
     const method = isEditing ? 'PUT' : 'POST';
 
     try {
@@ -57,7 +57,7 @@ function AdminPanel({ tenis, setTenis }) {
   const handleDelete = async (id) => {
     if (window.confirm('¿Estás seguro de que quieres eliminar este par de tenis?')) {
       try {
-        const res = await fetch(`http://localhost:5000/api/tenis/${id}`, {
+        const res = await fetch(`https://tienda-web-tenis.onrender.com/api/tenis${id}`, {
           method: 'DELETE',
           headers: { 'Authorization': `Bearer ${token}` },
         });
