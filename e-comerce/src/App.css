@@ -1,0 +1,240 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para el contenedor del Login */
+.login-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;   /* Centra verticalmente */
+  padding: 40px 20px;
+  min-height: 60vh;      /* Ocupa buena parte de la pantalla */
+}
+
+/* Estilo de la tarjeta del formulario */
+.login-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Ancho máximo del formulario */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre los elementos del formulario */
+}
+
+.login-form h2 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Grupo de label + input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Estilo de los campos de texto */
+.form-input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al hacer clic en el input */
+.form-input:focus {
+  outline: none;
+  border-color: #000; /* Color del borde al seleccionar */
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón */
+.form-button {
+  background-color: #000; /* Fondo negro como tu Navbar */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.form-button:hover {
+  background-color: #333;
+}
+
+/* Estilos para los mensajes de feedback */
+.form-message {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.form-message.success {
+  background-color: #e6f7e9;
+  color: #2f6f43;
+}
+
+.form-message.error {
+  background-color: #fdecea;
+  color: #a32424;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.auth-switch a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* --- Estilos para la Página de Checkout --- */
+.checkout-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2/3 para el form, 1/3 para el resumen */
+  gap: 40px;
+}
+
+.checkout-form .login-form {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.checkout-summary {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  height: fit-content; /* Para que no se estire innecesariamente */
+}
+
+.checkout-summary h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.summary-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.summary-item .item-details {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-name {
+  font-weight: 600;
+}
+
+.summary-total p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.summary-total .total-final {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* --- Estilos para Pantalla de Éxito --- */
+.compra-exitosa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 60vh;
+}
+
+.success-icon {
+  color: #28a745; /* Verde éxito */
+  margin-bottom: 20px;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 60vh;
+}
